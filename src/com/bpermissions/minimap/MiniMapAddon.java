@@ -56,7 +56,7 @@ public class MiniMapAddon extends JavaAddon {
 			if(externalFileUsed) return;
 			
 			// Instead of using a hardcoded .jar file name, get whatever .jar contains this addon's code
-			//File jarFile = new File(Spoutcraft.getAddonFolder(), "bMiniMap.jar");	
+			File jarFile = new File(Spoutcraft.getAddonFolder(), "bMiniMap.jar");	
 			File jarFile = new File(MiniMap.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath());
 			
 			JarFile jar = new JarFile(jarFile);
